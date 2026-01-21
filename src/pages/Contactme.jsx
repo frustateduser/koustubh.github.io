@@ -10,7 +10,7 @@ const Contactme = () => {
     return (
       <>
         <Header />
-        <div className="text-center">
+        <div className="text-center border-4 border-[#e96406] bg-white bg-opacity-95 p-12 rounded-lg shadow-lg m-20">
           <h2 className="text-2xl font-bold text-[#e96406] mb-4">
             Thank You for Contacting Me!
           </h2>
