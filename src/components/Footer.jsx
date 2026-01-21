@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       <footer className="w-full h-28 bg-dark text-white text-lg md:text-xl font-bold tracking-widest flex justify-center items-center shadow-2xl bg-black bg-opacity-90 mt-auto" style={{fontVariant: "small-caps"}}>
-        <p>&copy; 2021 Koustubh Badshah</p>
+        <p>&copy; {new Date().getFullYear()} Koustubh Badshah</p>
       </footer>
       <div id="scroll-icon" className="fixed bottom-32 right-5 z-40 cursor-pointer">
         <button 

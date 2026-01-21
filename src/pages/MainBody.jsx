@@ -9,7 +9,7 @@ const MainBody = () => {
       <Header />
       <main className="flex flex-col items-center grow">
         <img 
-          src="/profile.jpg" 
+          src="profile.jpg" 
           alt="profile" 
           id="profile" 
           className="w-48 h-48 sm:w-40 sm:h-40 lg:w-56 lg:h-56 border-4 border-primary rounded-full block mx-auto mt-20 lg:mt-32 transition-transform duration-500 hover:scale-110" 
