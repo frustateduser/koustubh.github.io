@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-image: url(/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .icon-box {
+    @apply h-40 w-64 border-4 border-black rounded-xl mx-auto my-10 bg-white transition-all duration-500 hover:shadow-xl hover:scale-105;
+  }
+
+  .icon-box a {
+    @apply flex justify-center items-center h-full w-full text-black text-3xl no-underline transition-all duration-500 flex-col gap-2;
+  }
+
+  .icon-box a:hover {
+    color: #e96406;
+  }
+}
