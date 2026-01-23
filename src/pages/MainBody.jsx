@@ -8,15 +8,18 @@ const MainBody = () => {
     <>
       <Header />
       <main className="flex flex-col items-center grow">
-        <img 
-          src="profile.jpg" 
-          alt="profile" 
-          id="profile" 
-          className="w-48 h-48 sm:w-40 sm:h-40 lg:w-56 lg:h-56 border-4 border-primary rounded-full block mx-auto mt-20 lg:mt-32 transition-transform duration-500 hover:scale-110" 
+        <img
+          src="profile.jpg"
+          alt="profile"
+          id="profile"
+          className="w-48 h-48 sm:w-40 sm:h-40 lg:w-56 lg:h-56 border-4 border-primary rounded-full block mx-auto mt-20 lg:mt-32 transition-transform duration-500 hover:scale-110"
         />
         <article className="w-full flex flex-col items-center">
           <div className="icon-box">
-            <Link to="/about" className="flex justify-center items-center h-full w-full text-black text-2xl md:text-3xl no-underline [&:hover]:text-[#e96406] transition-all duration-500 flex-col">
+            <Link
+              to="/about"
+              className="flex justify-center items-center h-full w-full text-black text-2xl md:text-3xl no-underline [&:hover]:text-[#e96406] transition-all duration-500 flex-col"
+            >
               <p>About Me</p>
             </Link>
           </div>
@@ -82,7 +85,30 @@ const MainBody = () => {
             </a>
           </div>
           <div className="icon-box">
-            <Link 
+            <a
+              href="https://frustateduser.github.io/blog/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex justify-center items-center h-full w-full text-black [&:hover]:text-[#e96406] transition-all duration-500 flex-col gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                fill="currentColor"
+                className="bi bi-list-columns-reverse"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M0 .5A.5.5 0 0 1 .5 0h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 .5m4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10A.5.5 0 0 1 4 .5m-4 2A.5.5 0 0 1 .5 2h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-4 2A.5.5 0 0 1 .5 4h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m-4 2A.5.5 0 0 1 .5 6h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5m-4 2A.5.5 0 0 1 .5 8h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5m-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5m-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+              <p>Blogs</p>
+            </a>
+          </div>
+          <div className="icon-box">
+            <Link
               to="/contact"
               className="flex justify-center items-center h-full w-full text-black [&:hover]:text-[#e96406] transition-all duration-500 flex-col gap-2"
             >
